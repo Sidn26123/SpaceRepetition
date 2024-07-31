@@ -1,0 +1,67 @@
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
+}
+
+.app{
+    display: flex;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+// Track
+::-webkit-scrollbar-track {
+    background: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-track:hover{
+    background: #555;
+}
+
+:root {
+    --background-color: #818181;
+    --text-color: #2D2D2F;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+}
+
+/* Dark mode theme */
+[data-theme='dark'] {
+    --background-color: #2D2D2F;
+    --text-color: #818181;
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Class to test the theme */
+// .test-theme {
+//     background-color: var(--background-color);
+//     color: var(--text-color);
+//     padding: 10px;
+//     margin: 10px;
+//     border-radius: 5px;
+//     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+// }
