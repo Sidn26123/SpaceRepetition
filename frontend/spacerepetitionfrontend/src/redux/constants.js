@@ -1,0 +1,23 @@
+export const LOGIN = "LOGIN";
+export const REGISTER = "REGISTER";
+export const LOGOUT = "LOGOUT";
+export const FETCH_USER = "FETCH_USER";
+export const FETCH_USER_SUCCESS = "FETCH_USER_SUCCESS";
+export const FETCH_USER_FAILURE = "FETCH_USER_FAILURE";
+
+//new item
+export const ADD_LEARN_ACTION = "ADD_LEARN_TASK";
+export const DELETE_LEARN_ACTION = "DELETE_LEARN_TASK";
+export const UPDATE_LEARN_ACTION = "UPDATE_LEARN_TASK";
+
+//review item 
+export const ADD_REVIEW_ACTION = "ADD_REVIEW_TASK";
+export const DELETE_REVIEW_ACTION = "DELETE_REVIEW_TASK";
+export const UPDATE_REVIEW_ACTION = "UPDATE_REVIEW_TASK";
+
+export const SEARCH_ACTION = "SEARCH";
+export const ADD_FILTER_ACTION = "ADD_FILTER";
+export const REMOVE_FILTER_ACTION = "REMOVE_FILTER";
+export const CLEAR_FILTER_ACTION = "CLEAR_FILTER";
+export const SET_SORT_ACTION = "SET_SORT";
+export const SET_PAGE_ACTION = "SET_PAGE";
