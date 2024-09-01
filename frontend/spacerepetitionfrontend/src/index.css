@@ -1,11 +1,13 @@
-
+@import 'tailwindcss/tailwind.css';
 body {
     margin: 0;
+    @apply font-sans;   
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: var(--background-color);
 }
 
 code {
@@ -21,7 +23,12 @@ code {
     background-color: var(--background-color);
     color: var(--text-color);
 }
-
+.z-2{
+    z-index: 2;
+}
+.z-1{
+    z-index: 1;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

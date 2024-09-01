@@ -38,6 +38,8 @@ body,
     --danger-color: #dc3545;
     --warning-color: #ffc107;
     --info-color: #17a2b8;
+    --line-break: #818181;
+    --card-color: #565c62;
 }
 
 /* Dark mode theme */
@@ -50,18 +52,50 @@ body,
     --danger-color: #dc3545;
     --warning-color: #ffc107;
     --info-color: #0dcaf0;
+    --line-break: #e0e0e0;
+    --card-color: #3f4143;
+    
 }
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-/* Class to test the theme */
-// .test-theme {
-//     background-color: var(--background-color);
-//     color: var(--text-color);
-//     padding: 10px;
-//     margin: 10px;
-//     border-radius: 5px;
-//     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-// }
+
+.background{
+    background-color: var(--background-color);
+}
+
+.text{
+    color: var(--text-color);
+}
+
+.primary{
+    color: var(--primary-color);
+}
+
+.secondary{
+    color: var(--secondary-color);
+}
+.secondary-bg{
+    background-color: var(--secondary-color);
+}
+.success{
+    color: var(--success-color);
+}
+
+.danger{
+    color: var(--danger-color);
+}
+
+.warning{
+    color: var(--warning-color);
+}
+
+.line{
+    color: var(--line-break);
+}
+
+.card-color{
+    background-color: var(--card-color);
+}

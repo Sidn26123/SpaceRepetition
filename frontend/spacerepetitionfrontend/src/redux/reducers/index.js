@@ -4,6 +4,7 @@ import userReducer from './userReducer';
 import recycleBinReducer from './recycleBinReducer';
 import settingsReducer from './settingsReducer';
 import reviewingReducer from './reviewingReducer';
+import uiReducer from './uiControllReducer';
 import { combineReducers } from 'redux';
 const rootReducer = {
     dashboard: dashboardReducer,
@@ -12,6 +13,7 @@ const rootReducer = {
     recycleBin: recycleBinReducer,
     settings: settingsReducer,
     reviewing: reviewingReducer,
+    ui: uiReducer,
 };
 
 export default combineReducers(rootReducer);
