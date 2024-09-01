@@ -1,0 +1,16 @@
+.styled-input {
+    /* font-size: 12px; Đặt kích thước chữ */
+    background-color: transparent; /* Loại bỏ màu nền */
+    margin: 0 5px; /* Khoảng cách giữa nội dung và viền */
+    outline: none; /* Loại bỏ viền khi focus */
+    box-sizing: border-box; /* Bao gồm cả đường viền và padding trong kích thước */
+    transition: border-color 0.3s ease; /* Hiệu ứng chuyển đổi viền khi focus */
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.break-line-light{
+    border-top: 2px solid var(--line-break);
+}

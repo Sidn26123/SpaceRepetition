@@ -20,6 +20,8 @@ const initState = {
     isAuthenticated: false,
     fetching: false,
     errorMsg: "",
+    accessToken: "",
+    refreshToken: "",
 };
 
 // initState = {
@@ -52,9 +54,11 @@ const userReducer = (state = initState, action) => {
         case LOGIN:
             return {
                 ...state,
-                user: action.payload,
+                user: action.payload.user,
                 fetching: false,
                 isAuthenticated: true,
+                accessToken: action.payload.access,
+                refreshToken: action.payload.refresh,
             };
         case LOGOUT:
             return {

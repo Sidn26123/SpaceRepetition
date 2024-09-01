@@ -4,7 +4,7 @@ import axios from "axios";
 import { LOGIN, REGISTER, LOGOUT } from "../constants";
 
 
-const userUrl = 'https://jsonplaceholder.typicode.com/users';
+const userUrl = 'http://localhost:8000/api/auth/obtain';
 
 export const loginAction = (data) => {
     return {
@@ -30,18 +30,17 @@ export const logoutSuccessAction = () => {
     
 }
 
-export const fetchUser = () => {
-    return (dispatch) => {
-        dispatch(fetchUserAction);
-        axios.get(userUrl)
-        .then((response) => {
-            dispatch(fetchUserSuccessAction(response.data));
-        })
-        .catch((error)=>{
-            dispatch(fetchUserFailureAction("Không hợp lệ"));
-        })
-    }
-}
+// export const fetchUser = ({username, password}) => {
+//     return (dispatch) => {
+//         dispatch(fetchUserAction);
+//         axios.post(userUrl, {username, password}).then((response) => {
+//             console.log(response.data);
+//             dispatch(fetchUserSuccessAction(response.data));
+//         }).catch((error) => {
+//             dispatch(fetchUserFailureAction(error));
+//         })
+//     }
+// }
 
 export const fetchUserAction = () => {
     
