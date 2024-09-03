@@ -3,23 +3,12 @@ import { useSelector, useDispatch } from "react-redux";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { set } from "react-datepicker/dist/date_utils";
+/*
+    Dropdown component
+*/
 export const Dropdown = ({ options, selected, onSelectedChange, color, idValue }) => {
-    // useEffect(() => {
-    //     // Hàm xử lý sự kiện khi click vào một phần tử
-    //     const handleClick = (event) => {
-    //       // Lấy danh sách class của phần tử được click
-    //       const elementClasses = event.target.className;
-    //       console.log(`Tôi đang click vào phần tử có class: ${elementClasses}`);
-    //     };
-
-    //     // Thêm event listener cho sự kiện click vào document
-    //     document.addEventListener('click', handleClick);
-
-    //     // Dọn dẹp event listener khi component unmount
-    //     return () => {
-    //       document.removeEventListener('click', handleClick);
-    //     };
-    //   }, []);
+    
+    
     const [show, setShow] = useState(false);
     function handleShow() {
         setShow(!show);
@@ -30,6 +19,8 @@ export const Dropdown = ({ options, selected, onSelectedChange, color, idValue }
             : "text-gray-700 bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-gray-400 dark:hover:bg-gray-500 dark:focus:ring-gray-600";
     return (
         <div>
+        
+        {console.log(options)}
             <button
                 id="dropdownDefaultButton"
                 data-dropdown-toggle="dropdown"
@@ -64,9 +55,9 @@ export const Dropdown = ({ options, selected, onSelectedChange, color, idValue }
                         aria-labelledby="dropdownDefaultButton"
                     >
 
-                        {options.map((option) => {
+                        {options.map((option, index) => {
                             return (
-                                <li>
+                                <li key = { index}>
                                     <span
                                         class="block px-4 py-2 hover:bg-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                                         onClick={() => {

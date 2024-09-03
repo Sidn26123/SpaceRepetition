@@ -128,7 +128,7 @@ const Sidebar = (props) => {
                                     <span className="w-6">
                                         <FontAwesomeIcon icon={faUser} />
                                     </span>
-                                    <span>Tài khoản</span>
+                                    <span>Tài khoảns</span>
                                 </div>
                             </Link>
                             <div className="sidebar-item" onClick={() => handleLogout()}>
